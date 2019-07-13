@@ -9,37 +9,27 @@
 
 <body>
     <script>
-        var rows = prompt ("how many rows?");
-        var cols = prompt ("how many cols?");
+//         var num1 = prompt("how many 1?");
+//         var num2 = prompt("how many 2?");
+
+// function findLCM (){
+//     for (var i = 1; i <= (num1*num2); i++){
+//         function
+//     }
+//     return lcm
+
+// }
+
+// return  lcm
 
 
-        //clear functions before you use them - bad practice
-        function makeRow(){
-            for( var i = 1; i <= cols; i++)
-            document.write (" X ")
+function bobSays(whatHeSaid){
+        document.write("B says, " + whatHeSaid);
+        document.write("<br>")
+}
 
-        }
-        function findNumberOfCells(){
-            var total = cols * rows;
-
-            if (total >100){
-                alert ("Too many rows...")
-                return "A billzillion";
-            }
-
-
-            return( total);
-        }
-
-        for (var i = 1; i< rows; i++){
-            makeRow();
-            document.write ("<br>");
-            console.log("Code got this far")
-        }
-        var totalCells = findNumberOfCells();
-        document.write("With " + rows + "Rows and " + cols);
-        document.write("there are  "+  totalCells );
-      document.write (" total cells.");
+bobSays("Use tabs not spaces");
+bobSays("Lin Rocks");
 
     </script>
 
