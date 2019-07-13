@@ -12,6 +12,8 @@
         var rows = prompt ("how many rows?");
         var cols = prompt ("how many cols?");
 
+
+        //clear functions before you use them - bad practice
         function makeRow(){
             for( var i = 1; i <= cols; i++)
             document.write (" X ")
@@ -32,6 +34,7 @@
         for (var i = 1; i< rows; i++){
             makeRow();
             document.write ("<br>");
+            console.log("Code got this far")
         }
         var totalCells = findNumberOfCells();
         document.write("With " + rows + "Rows and " + cols);
