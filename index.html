@@ -17,11 +17,18 @@
             document.write (" X ")
 
         }
+        function findNumberOfCells(){
+            document.write( cols * rows);
+        }
+
         for (var i = 1; i< rows; i++){
             makeRow();
             document.write ("<br>");
         }
-      
+        document.write("With " + rows + "Rows and ");
+        document.write(" " + cols + " there are ");
+      findNumberOfCells();
+      document.write (" total cells.");
 
     </script>
 
