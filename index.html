@@ -9,128 +9,17 @@
 
 <body>
     <script>
-        // java only 
-        document.write("Welome to Javascript everybody");
 
-
-        document.write("<br />");
-        document.write("<strong>Lung Huyen</strong>");
-        document.write("<br />");
-        document.write("<br />");
-        document.write(30 * 3);
-        document.write("<br />");
-        document.write(25 * 125);
-
-
-        document.write("<div>Age " + (42 / 3) + "</div>");
-        document.write("<div>Day " + (20 * 127) + "</div>");
-
-
-
-        var age = 30;
-        var day = 25;
-        var name = "Lung Huyen"
-
-
-
-        document.write("<div>Age " + (age / 3) + "</div>");
-        document.write("<div>Day " + (day * 127) + "</div>");
-        document.write("<br />");
-        document.write("age x day: " + (age * day));
-
-        document.write("<br />");
-        document.write("<br />");
-
-        document.write(42 == (21 * 2));
-
-        document.write("<br />");
-        document.write(("Bob" === "Bob") && (1 === 2));
-
-        document.write("<br />");
-        document.write("<br />");
-        document.write("<br />");
-
-        var name = prompt("User's name?");
-        var age = prompt(" User's age");
-
-
-        //
-
-
-        // if (age > 55) { document.write(name + "is old");
-        // } else if {
-        //     document.write( "User is young");
-
-        // }
-        // else {
-        //     document.write("user is just right");
-        // }
-
-        // document.write("<br />");
-
-
-        // /*Flow Control - Last Piece */
-        // document.write("<br/>");
-        // var age = prompt("User's Age?");
-        // var name = prompt("User's Name?");
-        //  if(age > 55) {
-        //     document.write("User is Old");
-        //  } else if(age < 25) {
-        //      document.write("User is Young");
-        //  } else {
-        //     document.write("User is Just Right");
-        //  }
-
-        /*Flow Control - Last Piece */
-
-
-        //         document.write("<br/>");
-        //         var age = prompt("User's Age?");
-        //         var name = prompt("User's Name?");
-        //          if(age > 55) {
-
-        //             document.write("User is Old");
-
-        //          } else if(age < 25) && (age <55) {
-        //              document.write("User is just right");
-        //          } else {
-        //              document.write ( "user is young");
-
-        //          }
-
-        // var number = promt("count from what?")
-        //  while (number < 100) {
-        //     number ++;
-        //     document.write ( "Number " + number + "<br>");
-
-        var number = 99;
-        while (number < 100 && number > 0) {
-            document.write(number + " bottles of beer on the wall, " + number + " bottles of beer. <br>");
-            document.write(number + " bottles of beer! <br>");
-            document.write("Take one down, pass it around. <br>");
-            number--;
-            document.write(number + " bottles of beer on the wall! <br>");
-            document.write("<br/>");
-
-
-
-
+    var col = prompt("how many cols");
+    var rows = prompt("how many rows");
+    for ( var x =1; x <= rows; x++) {
+        document.write("<br>");
+        for ( var i = 1; i <= col; i++) {
+            document.write(" X ");
         }
-   
- }
-
-
-        var number = prompt("Count from what")
-        var number2 = prompt("Count to what")
-
-for (var i = number; i>number2; i--)
-document.write("Number " + i + "<br>");
-
-
+    }
 
     </script>
-
-
 
 </body>
 
