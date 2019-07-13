@@ -9,14 +9,19 @@
 
 <body>
     <script>
-        function bobsays(){
-            alert ("Yup I said soemthing")
+        var rows = prompt ("how many rows?");
+        var cols = prompt ("how many cols?");
+
+        function makeRow(){
+            for( var i = 1; i <= cols; i++)
+            document.write (" X ")
 
         }
-        for ( var i= 1; i< 20; i++){
-            
+        for (var i = 1; i< rows; i++){
+            makeRow();
+            document.write ("<br>");
         }
-        bobsays();
+      
 
     </script>
 
