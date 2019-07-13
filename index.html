@@ -22,24 +22,29 @@
 
         // repeatWord (wordPrompt, numPrompt)
 
-        function printNum(one, two, three, four){
+    // function printNum(one, two, three, four){
 
+function printNum(myArray) {
+for ( var i = 0; i < myArray.length; i++){
+document.write("Print " + myArray[i]);
+document.write("<br>")
 
+}
+}
             
-            document.write("Print " + one);
-            document.write("<br>");
-            document.write("Print " + two);
-            document.write("<br>");
-            document.write("Print " + three);
-            document.write("<br>");
-            document.write("Print " + four);
-            document.write("<br>");
+            // document.write("Print " + one);
+            // document.write("<br>");
+            // document.write("Print " + two);
+            // document.write("<br>");
+            // document.write("Print " + three);
+            // document.write("<br>");
+            // document.write("Print " + four);
+            // document.write("<br>");
         
-        }
-
+        
             var nums = [23, 24, 25, 75];
-            printNum(nums[0], nums[1], nums[2], nums[3]);
-        
+           // printNum(nums[0], nums[1], nums[2], nums[3]);
+            printNum(nums)
 
 
 
