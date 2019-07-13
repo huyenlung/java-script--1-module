@@ -18,7 +18,14 @@
 
         }
         function findNumberOfCells(){
-            
+            var total = cols * rows;
+
+            if (total >100){
+                alert ("Too many rows...")
+                return "A billzillion";
+            }
+
+
             return( cols * rows);
         }
 
