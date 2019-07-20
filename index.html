@@ -8,40 +8,31 @@
 </head>
 
 <body>
- <script>
- function displayToScreen(sometext) {
-    document.write(sometext);
+    <div id="music">
+        <h1 id="title"> </h1>
+        <h3 id="author"></h3>
 
- }
- 
- let ourList = [ "one", "two", "3"];
+    </div>
 
 
+    <script>
 
- // add another list to our list
- ourList[3] = "Princess.. blah blah";
- ourList.push("Snakes");
- ourList[ourList.length] = "Even another thing";
-
-
- // remove item from array/list
- ourList.pop();
- delete ourList[4];
- ourList.length = 2;
-
- for( let i=0; i< ourList.length; i++){
-// let message = ourlist[i];
-displayToScreen( ourList[i] );
-document.write("<br>");
-
- }
+        function displayToScreen(a,t) {
+            document.getElementById("author").innerText = a;
+            document.getElementById("title").innerText = t;
+        }
 
 
- 
 
 
- 
- </script>
+let auth = prompt("Name of author?");
+let titl = prompt("Name of title?");
+displayToScreen(auth, titl);
+
+
+
+
+    </script>
 
 </body>
 
