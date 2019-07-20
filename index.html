@@ -16,6 +16,10 @@
         <input type="text" id="title" placeholder="Enter book Title">
         <input type="text" id="name" placeholder="Enter book Name">
         <button onclick="updateBooks()">Set Author</button>
+        <br>
+        <button onclick= "removebook()">Remove Book</button>
+
+
 
     </div>
 
@@ -27,10 +31,9 @@
         // author: "J.R.R. Tolken",
         // title: "Lord of the Rings"
 
-        let books = [ book1, book2, book3] ;
+        let books = [ book1, book2, book3];
 
-      
-
+    
 
         function updateBooks() {
            let n = document.getElementById("name").value;
@@ -50,10 +53,15 @@
                 auth.innerHTML += "<h4>" + books[i].author + "</h4>"
             }
         }
-        printAuthList ()
+    
 
+function removebook(){
+    books.pop ();
+    printAuthList();
 
+}
 
+printAuthList ()
 // books.push
 // printAuthList();
 //             }
