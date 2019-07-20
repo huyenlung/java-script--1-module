@@ -8,24 +8,67 @@
 </head>
 
 <body>
-    <div id="music">
-        <h1 id="title"> </h1>
-        <h3 id="author"></h3>
+    <div id="myList">
+        <div id="authors">
+        </div>
+
+
+        <input type="text" id="title" placeholder="Enter book Title">
+        <input type="text" id="name" placeholder="Enter book Name">
+        <button onclick="updateBooks()">Set Author</button>
 
     </div>
-    <input type="text" id="name" placeholder="charles dicken">
-    <button onclick="displayToScreen()">Set Author</button>
-
-
 
     <script>
+        /// objects
+        var book1 = { author: " jrr", title: "Lord of the ring"};
+        var book2 = { author: " charles dicks", title: "a tale"};
+        var book3 = { author: " Reid hoff", title: "Blitz"};
+        // author: "J.R.R. Tolken",
+        // title: "Lord of the Rings"
 
-        // var x = document.getElementsByName("fname");
+        let books = [ book1, book2, book3] ;
 
-        function displayToScreen() {
- var i=document.getElementById("name").value;
- document.getElementById("author").innerText=i;
+      
+
+
+        function updateBooks() {
+           let n = document.getElementById("name").value;
+           let t = document.getElementById("title").value;
+           let book4 = { author: n, title: t}
+           books.push (book4)
+           console.log(book4)
+           printAuthList()
+
         }
+      
+        function printAuthList() {
+            let auth = document.getElementById("authors");
+            auth.innerHTML = " ";
+            for (let i = 0; i < books.length; i++) {
+                auth.innerHTML += "<h2>" + books[i].title + "</h2>"
+                auth.innerHTML += "<h4>" + books[i].author + "</h4>"
+            }
+        }
+        printAuthList ()
+
+
+
+// books.push
+// printAuthList();
+//             }
+//             document.getElementById("title").innerText = n;
+
+
+//         }
+
+
+
+        // function displayToScreen() 
+        // let n = document.getElementById("name").value;
+        // document.getElementById("author").innerText=i;
+
+
 
         // //    ment.getElementById("title").innerText = ;
 
