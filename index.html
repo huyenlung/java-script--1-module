@@ -13,21 +13,33 @@
         <h3 id="author"></h3>
 
     </div>
+    <input type="text" id="name" placeholder="charles dicken">
+    <button onclick="displayToScreen()">Set Author</button>
+
 
 
     <script>
 
-        function displayToScreen(a,t) {
-            document.getElementById("author").innerText = a;
-            document.getElementById("title").innerText = t;
+        // var x = document.getElementsByName("fname");
+
+        function displayToScreen() {
+ var i=document.getElementById("name").value;
+ document.getElementById("author").innerText=i;
         }
 
+        // //    ment.getElementById("title").innerText = ;
+
+        // }
+
+        // function displayToScreen() {
+        //     var title
+
+        // }
 
 
-
-let auth = prompt("Name of author?");
-let titl = prompt("Name of title?");
-displayToScreen(auth, titl);
+        // let auth = prompt("Name of author?");
+        // let titl = prompt("Name of title?");
+        // displayToScreen(auth, titl);
 
 
 
